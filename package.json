@@ -7,9 +7,10 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon --watch '**/*.ts' --exec ts-node-dev server.ts"
+    "start": "nodemon --watch '**/*.ts' --exec ts-node-dev src/server.ts"
   },
   "dependencies": {
+    "apollo-server": "^3.4.0",
     "graphql": "^15.6.1"
   },
   "devDependencies": {
