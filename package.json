@@ -1,0 +1,22 @@
+{
+  "name": "graphql-ts-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AbhinavRobinson/graphql-ts-server.git",
+  "author": "Abhinav Robinson <abhinavrobinson@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon --watch '**/*.ts' --exec ts-node-dev server.ts"
+  },
+  "dependencies": {
+    "graphql": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.0",
+    "nodemon": "^2.0.13",
+    "ts-node": "^10.3.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  }
+}
