@@ -35,4 +35,15 @@ describe('AppController (e2e)', () => {
       .expect(200)
       .expect('This action returns a #12345 item');
   });
+
+  it('/items (POST)', () => {
+    return request(app.getHttpServer())
+      .post('/items')
+      .send({
+        name: 'I1',
+        description: 'D1',
+      })
+      .expect(201)
+      .expect('Name: I1 Desc: D1');
+  });
 });
